@@ -1,0 +1,423 @@
+object FrameNumpad: TFrameNumpad
+  Align = Right
+  Size.Width = 185.000000000000000000
+  Size.Height = 230.000000000000000000
+  Size.PlatformDefault = False
+  object pBackground: TPanel
+    Align = Client
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 230.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'pPad'
+    TabOrder = 0
+    object lytNumsTop: TLayout
+      Align = Top
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 175.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object btn7: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 0
+        Text = '7'
+        TextSettings.Font.Size = 20.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyNums
+      end
+      object btn9: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Position.X = 90.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 1
+        Text = '9'
+        TextSettings.Font.Size = 20.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyNums
+      end
+      object btn8: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Position.X = 45.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 2
+        Text = '8'
+        TextSettings.Font.Size = 20.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyNums
+      end
+      object btnPlus: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 135.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 3
+        Text = '+'
+        TextSettings.Font.Size = 30.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyCaracters
+      end
+    end
+    object lytNumsClient: TLayout
+      Align = Client
+      Size.Width = 175.000000000000000000
+      Size.Height = 130.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lytBtnEnter: TLayout
+        Align = Right
+        Position.X = 135.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 130.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnEnter: TCornerButton
+          Align = Top
+          CanFocus = False
+          StyledSettings = [Family, Style, FontColor]
+          Margins.Bottom = 5.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 40.000000000000000000
+          Size.Height = 85.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'btnPad'
+          TabOrder = 0
+          Text = 'Enter'
+          TextSettings.Font.Size = 10.000000000000000000
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          OnClick = btnEnterClick
+        end
+        object btnExit: TCornerButton
+          Align = Top
+          CanFocus = False
+          StyledSettings = [Family, Style, FontColor]
+          Position.Y = 90.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 40.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'btnPad'
+          TabOrder = 2
+          Text = #10007
+          TextSettings.Font.Size = 25.000000000000000000
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          OnClick = btnExitClick
+        end
+      end
+      object lytNums: TLayout
+        Align = Client
+        Margins.Right = 5.000000000000000000
+        Size.Width = 130.000000000000000000
+        Size.Height = 130.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lytNums2: TLayout
+          Align = MostTop
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object btn4: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 0
+            Text = '4'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+          object btn5: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Position.X = 45.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 1
+            Text = '5'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+          object btn6: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Position.X = 90.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 2
+            Text = '6'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+        end
+        object lytNums1: TLayout
+          Align = Top
+          Margins.Bottom = 5.000000000000000000
+          Position.Y = 45.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object btn3: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 90.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 0
+            Text = '3'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+          object btn1: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 1
+            Text = '1'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+          object btn2: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Position.X = 45.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 2
+            Text = '2'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+        end
+        object lytNums0: TLayout
+          Align = Top
+          Position.Y = 90.000000000000000000
+          Size.Width = 130.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object btn0: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 0
+            Text = '0'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+          object btnvirgula: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Position.X = 90.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 1
+            Text = ','
+            TextSettings.Font.Size = 25.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyCaracters
+          end
+          object btn00: TCornerButton
+            Align = Left
+            CanFocus = False
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Right = 5.000000000000000000
+            Position.X = 45.000000000000000000
+            Sides = [Top, Left, Bottom, Right]
+            Size.Width = 40.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'btnPad'
+            TabOrder = 2
+            Text = '00'
+            TextSettings.Font.Size = 20.000000000000000000
+            XRadius = 5.000000000000000000
+            YRadius = 5.000000000000000000
+            OnClick = KeyNums
+          end
+        end
+      end
+    end
+    object lytNumsMosttop: TLayout
+      Align = MostTop
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 175.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object btnBarra: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 0
+        Text = '/'
+        TextSettings.Font.Size = 25.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyCaracters
+      end
+      object btnTraco: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Position.X = 90.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 1
+        Text = '-'
+        TextSettings.Font.Size = 25.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyCaracters
+      end
+      object btnAsterisco: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Margins.Right = 5.000000000000000000
+        Position.X = 45.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 2
+        Text = '*'
+        TextSettings.Font.Size = 25.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = KeyCaracters
+      end
+      object btnBackspace: TCornerButton
+        Align = Left
+        CanFocus = False
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 135.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 40.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'btnPad'
+        TabOrder = 3
+        Text = #8701
+        TextSettings.Font.Size = 25.000000000000000000
+        XRadius = 5.000000000000000000
+        YRadius = 5.000000000000000000
+        OnClick = btnBackspaceClick
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+  end
+end
