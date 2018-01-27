@@ -1,4 +1,4 @@
-object FramePad: TFramePad
+object FrameKeyboard: TFrameKeyboard
   Align = Right
   Size.Width = 635.000000000000000000
   Size.Height = 230.000000000000000000

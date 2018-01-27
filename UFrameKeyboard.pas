@@ -1,4 +1,4 @@
-unit UFramePad;
+unit UFrameKeyboard;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.Layouts, FMX.Ani;
 
 type
-  TFramePad = class(TFrame)
+  TFrameKeyboard = class(TFrame)
     pBackground: TPanel;
     lytMostTop: TLayout;
     lytTopMostTop: TLayout;
@@ -99,6 +99,7 @@ type
 
     procedure FloatMoving;
     procedure ModifyOnShift;
+    procedure CancelShift;
   public
     { Public declarations }
     constructor Create(_AOwner: TComponent; _SenderFocus: TObject); overload;
@@ -106,7 +107,7 @@ type
   end;
 
 var
-  FramePad: TFramePad;
+  FrameKeyboard: TFrameKeyboard;
 
 implementation
 
@@ -117,15 +118,13 @@ uses
 
 { TFramePad }
 
-procedure TFramePad.KeyPress(Sender: TObject);
+procedure TFrameKeyboard.KeyPress(Sender: TObject);
 begin
   InputKeyPress(SenderFocus, TCornerButton(Sender).Text);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-procedure TFramePad.ModifyOnShift;
+procedure TFrameKeyboard.ModifyOnShift;
 begin
   case Shift of
     true:
@@ -182,15 +181,13 @@ begin
   end;
 end;
 
-procedure TFramePad.btnBackspaceClick(Sender: TObject);
+procedure TFrameKeyboard.btnBackspaceClick(Sender: TObject);
 begin
   InputKeyBackSpace(SenderFocus);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-procedure TFramePad.btnCapslookClick(Sender: TObject);
+procedure TFrameKeyboard.btnCapslookClick(Sender: TObject);
 begin
   Capslook  := not Capslook;
 
@@ -200,46 +197,40 @@ begin
   ToUpperExecute(lytTopTop, Capslook);
 end;
 
-procedure TFramePad.btnDelClick(Sender: TObject);
+procedure TFrameKeyboard.btnDelClick(Sender: TObject);
 begin
   InputKeyDel(SenderFocus);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-procedure TFramePad.btnDownClick(Sender: TObject);
+procedure TFrameKeyboard.btnDownClick(Sender: TObject);
 begin
   InputKeyDown(SenderFocus);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-procedure TFramePad.btnEnterClick(Sender: TObject);
+procedure TFrameKeyboard.btnEnterClick(Sender: TObject);
 begin
   InputKeyEnter(SenderFocus);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-procedure TFramePad.btnExitClick(Sender: TObject);
+procedure TFrameKeyboard.btnExitClick(Sender: TObject);
 begin
   Release;
 end;
 
-procedure TFramePad.btnLeftClick(Sender: TObject);
+procedure TFrameKeyboard.btnLeftClick(Sender: TObject);
 begin
   InputKeyLeft(SenderFocus);
 end;
 
-procedure TFramePad.btnRightClick(Sender: TObject);
+procedure TFrameKeyboard.btnRightClick(Sender: TObject);
 begin
   InputKeyRight(SenderFocus);
 end;
 
-procedure TFramePad.btnShiftClick(Sender: TObject);
+procedure TFrameKeyboard.btnShiftClick(Sender: TObject);
 begin
   Shift := not Shift;
 
@@ -250,15 +241,13 @@ begin
   ModifyOnShift;
 end;
 
-procedure TFramePad.btnUpClick(Sender: TObject);
+procedure TFrameKeyboard.btnUpClick(Sender: TObject);
 begin
   InputKeyUp(SenderFocus);
-
-  if Shift then
-    btnShiftClick(btnShift);
+  CancelShift;
 end;
 
-constructor TFramePad.Create(_AOwner: TComponent; _SenderFocus: TObject);
+constructor TFrameKeyboard.Create(_AOwner: TComponent; _SenderFocus: TObject);
 begin
   inherited Create(_AOwner);
   Parent      := TFmxObject(_AOwner);
@@ -269,12 +258,12 @@ begin
   FloatMoving;
 end;
 
-procedure TFramePad.FloatMoving;
+procedure TFrameKeyboard.FloatMoving;
 begin
   FloatAnimation1.Enabled := true;
 end;
 
-procedure TFramePad.Release;
+procedure TFrameKeyboard.Release;
 begin
   Name := '';
 
@@ -282,6 +271,12 @@ begin
   inherited;
 
   FramePad := nil;
+end;
+
+procedure TFrameKeyboard.CancelShift;
+begin
+  if Shift then
+    btnShiftClick(btnShift);
 end;
 
 end.

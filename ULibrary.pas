@@ -6,8 +6,8 @@ uses
   FMX.Layouts;
 
 type
-  TOnPad = reference to procedure(_SenderFocus: TObject);
-  TOffPad = reference to procedure;
+  TOnKeyboard = reference to procedure(_SenderFocus: TObject);
+  TOffKeyboard = reference to procedure;
 
   TOnNumpad = reference to procedure(_SenderFocus: TObject; _PadInteger: boolean);
   TOffNumpad = reference to procedure;
@@ -24,8 +24,8 @@ procedure InputKeyUp(_SenderFocus: TObject);
 procedure InputKeyDown(_SenderFocus: TObject);
 
 var
-  OnPad: TOnPad;
-  OffPad: TOffPad;
+  OnKeyboard: TOnKeyboard;
+  OffKeyboard: TOffKeyboard;
 
   OnNumPad: TOnNumpad;
   OffNumPad: TOffNumpad;
