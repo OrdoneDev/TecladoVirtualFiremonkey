@@ -84,9 +84,8 @@ object TStyleContainer
   object TRectangle
     StyleName = 'pBackground'
     Align = Center
-    Fill.Color = xFF939393
+    Fill.Color = xFFE9E9E9
     HitTest = False
-    Opacity = 0.899999976158142100
     Size.Width = 120.000000000000000000
     Size.Height = 120.000000000000000000
     Size.PlatformDefault = False
@@ -94,5 +93,156 @@ object TStyleContainer
     Visible = False
     XRadius = 5.000000000000000000
     YRadius = 5.000000000000000000
+  end
+  object TLayout
+    StyleName = 'Label1Style1'
+    Align = Center
+    Size.Width = 120.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 3
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Size.Width = 120.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Text'
+      TextSettings.Font.Family = 'Arial'
+      TextSettings.Font.Size = 20.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'Edit1Style1'
+    Align = Center
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 4
+    object TActiveStyleObject
+      StyleName = 'background'
+      Align = Contents
+      SourceLookup = 'Windows 7style.png'
+      Size.Width = 100.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      ActiveTrigger = Focused
+      ActiveLink = <
+        item
+          CapInsets.Left = 7.000000000000000000
+          CapInsets.Top = 7.000000000000000000
+          CapInsets.Right = 7.000000000000000000
+          CapInsets.Bottom = 7.000000000000000000
+          SourceRect.Left = 225.000000000000000000
+          SourceRect.Top = 112.000000000000000000
+          SourceRect.Right = 316.000000000000000000
+          SourceRect.Bottom = 141.000000000000000000
+        end
+        item
+          CapInsets.Left = 10.000000000000000000
+          CapInsets.Top = 10.000000000000000000
+          CapInsets.Right = 10.000000000000000000
+          CapInsets.Bottom = 10.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 337.000000000000000000
+          SourceRect.Top = 168.000000000000000000
+          SourceRect.Right = 473.000000000000000000
+          SourceRect.Bottom = 211.000000000000000000
+        end
+        item
+          CapInsets.Left = 14.000000000000000000
+          CapInsets.Top = 14.000000000000000000
+          CapInsets.Right = 14.000000000000000000
+          CapInsets.Bottom = 14.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 450.000000000000000000
+          SourceRect.Top = 224.000000000000000000
+          SourceRect.Right = 632.000000000000000000
+          SourceRect.Bottom = 282.000000000000000000
+        end>
+      SourceLink = <
+        item
+          CapInsets.Left = 7.000000000000000000
+          CapInsets.Top = 7.000000000000000000
+          CapInsets.Right = 7.000000000000000000
+          CapInsets.Bottom = 7.000000000000000000
+          SourceRect.Left = 225.000000000000000000
+          SourceRect.Top = 81.000000000000000000
+          SourceRect.Right = 316.000000000000000000
+          SourceRect.Bottom = 110.000000000000000000
+        end
+        item
+          CapInsets.Left = 10.000000000000000000
+          CapInsets.Top = 10.000000000000000000
+          CapInsets.Right = 10.000000000000000000
+          CapInsets.Bottom = 10.000000000000000000
+          Scale = 1.500000000000000000
+          SourceRect.Left = 337.000000000000000000
+          SourceRect.Top = 122.000000000000000000
+          SourceRect.Right = 473.000000000000000000
+          SourceRect.Bottom = 165.000000000000000000
+        end
+        item
+          CapInsets.Left = 14.000000000000000000
+          CapInsets.Top = 14.000000000000000000
+          CapInsets.Right = 14.000000000000000000
+          CapInsets.Bottom = 14.000000000000000000
+          Scale = 2.000000000000000000
+          SourceRect.Left = 450.000000000000000000
+          SourceRect.Top = 162.000000000000000000
+          SourceRect.Right = 632.000000000000000000
+          SourceRect.Bottom = 220.000000000000000000
+        end>
+      TouchAnimation.Link = <>
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = Client
+      Locked = True
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TLayout
+      StyleName = 'buttons'
+      Align = Right
+      Locked = True
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x7F3399FF
+    end
+    object TFontObject
+      StyleName = 'font'
+      Font.Family = 'Arial'
+      Font.Size = 20.000000000000000000
+    end
+    object TLabel
+      StyleName = 'prompt'
+      Locked = True
+      Opacity = 0.500000000000000000
+      StyleLookup = 'Edit1Style1LabelStyle1'
+      Visible = False
+    end
   end
 end
