@@ -1,5 +1,5 @@
 # TecladoVirtualFiremonkey
-Teclados virtuais, alfanumérico e numpad feito em firemonkey e frames.
+Teclados virtuais, alfanumérico e numpad feito em firemonkey utilizando frames.
 
 # Keyboard
 ![Keyboard](https://image.ibb.co/eGc6eG/keyboard2.png)
