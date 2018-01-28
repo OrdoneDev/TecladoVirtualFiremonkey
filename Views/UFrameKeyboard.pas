@@ -270,7 +270,7 @@ begin
   pBackground.Controls.Clear;
   inherited;
 
-  FramePad := nil;
+  FrameKeyboard := nil;
 end;
 
 procedure TFrameKeyboard.CancelShift;

@@ -12,7 +12,7 @@ object FrameKeyboard: TFrameKeyboard
     Size.Width = 635.000000000000000000
     Size.Height = 230.000000000000000000
     Size.PlatformDefault = False
-    StyleLookup = 'pPad'
+    StyleLookup = 'pKeyboard'
     TabOrder = 0
     object lytMostTop: TLayout
       Align = MostTop
@@ -32,7 +32,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 13
         Text = #39
         TextSettings.Font.Size = 25.000000000000000000
@@ -50,7 +50,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 12
         Text = #8701
         TextSettings.Font.Size = 25.000000000000000000
@@ -68,7 +68,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 11
         Text = '='
         TextSettings.Font.Size = 25.000000000000000000
@@ -86,7 +86,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 10
         Text = '-'
         TextSettings.Font.Size = 25.000000000000000000
@@ -104,7 +104,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 9
         Text = '0'
         TextSettings.Font.Size = 20.000000000000000000
@@ -122,7 +122,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 8
         Text = '9'
         TextSettings.Font.Size = 20.000000000000000000
@@ -140,7 +140,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 7
         Text = '7'
         TextSettings.Font.Size = 20.000000000000000000
@@ -158,7 +158,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 6
         Text = '6'
         TextSettings.Font.Size = 20.000000000000000000
@@ -176,7 +176,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 4
         Text = '5'
         TextSettings.Font.Size = 20.000000000000000000
@@ -194,7 +194,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 3
         Text = '4'
         TextSettings.Font.Size = 20.000000000000000000
@@ -212,7 +212,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 2
         Text = '3'
         TextSettings.Font.Size = 20.000000000000000000
@@ -230,7 +230,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 1
         Text = '2'
         TextSettings.Font.Size = 20.000000000000000000
@@ -248,7 +248,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 0
         Text = '1'
         TextSettings.Font.Size = 20.000000000000000000
@@ -266,7 +266,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 5
         Text = '8'
         TextSettings.Font.Size = 20.000000000000000000
@@ -291,7 +291,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 265.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 5
         Text = ' '
         XRadius = 5.000000000000000000
@@ -308,7 +308,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 7
         Text = #8594
         TextSettings.Font.Size = 25.000000000000000000
@@ -326,7 +326,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 8
         Text = #8595
         TextSettings.Font.Size = 25.000000000000000000
@@ -344,7 +344,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 9
         Text = #8592
         TextSettings.Font.Size = 25.000000000000000000
@@ -361,7 +361,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 6
         Text = #10007
         TextSettings.Font.Size = 25.000000000000000000
@@ -409,7 +409,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 16
               Text = 'q'
               TextSettings.Font.Size = 20.000000000000000000
@@ -428,7 +428,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 15
               Text = 'w'
               TextSettings.Font.Size = 20.000000000000000000
@@ -447,7 +447,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 14
               Text = 'e'
               TextSettings.Font.Size = 20.000000000000000000
@@ -466,7 +466,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 13
               Text = 'r'
               TextSettings.Font.Size = 20.000000000000000000
@@ -485,7 +485,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 12
               Text = 't'
               TextSettings.Font.Size = 20.000000000000000000
@@ -504,7 +504,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 11
               Text = 'y'
               TextSettings.Font.Size = 20.000000000000000000
@@ -523,7 +523,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 10
               Text = 'u'
               TextSettings.Font.Size = 20.000000000000000000
@@ -541,7 +541,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 9
               Text = '['
               TextSettings.Font.Size = 25.000000000000000000
@@ -559,7 +559,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 8
               Text = #180
               TextSettings.Font.Size = 25.000000000000000000
@@ -578,7 +578,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 7
               Text = 'p'
               TextSettings.Font.Size = 20.000000000000000000
@@ -597,7 +597,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 6
               Text = 'o'
               TextSettings.Font.Size = 20.000000000000000000
@@ -616,7 +616,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 5
               Text = 'i'
               TextSettings.Font.Size = 20.000000000000000000
@@ -633,7 +633,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 17
               Text = ']'
               TextSettings.Font.Size = 25.000000000000000000
@@ -660,7 +660,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 15
               Text = 'a'
               TextSettings.Font.Size = 20.000000000000000000
@@ -679,7 +679,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 14
               Text = 's'
               TextSettings.Font.Size = 20.000000000000000000
@@ -698,7 +698,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 13
               Text = 'd'
               TextSettings.Font.Size = 20.000000000000000000
@@ -717,7 +717,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 12
               Text = 'f'
               TextSettings.Font.Size = 20.000000000000000000
@@ -736,7 +736,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 11
               Text = 'g'
               TextSettings.Font.Size = 20.000000000000000000
@@ -755,7 +755,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 10
               Text = 'h'
               TextSettings.Font.Size = 20.000000000000000000
@@ -774,7 +774,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 9
               Text = 'j'
               TextSettings.Font.Size = 20.000000000000000000
@@ -792,7 +792,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 8
               Text = '~'
               TextSettings.Font.Size = 25.000000000000000000
@@ -811,7 +811,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 7
               Text = #231
               TextSettings.Font.Size = 20.000000000000000000
@@ -830,7 +830,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 6
               Text = 'l'
               TextSettings.Font.Size = 20.000000000000000000
@@ -849,7 +849,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 5
               Text = 'k'
               TextSettings.Font.Size = 20.000000000000000000
@@ -866,7 +866,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 17
               Text = 'Caps'
               TextSettings.Font.Size = 10.000000000000000000
@@ -884,7 +884,7 @@ object FrameKeyboard: TFrameKeyboard
               Size.Width = 40.000000000000000000
               Size.Height = 40.000000000000000000
               Size.PlatformDefault = False
-              StyleLookup = 'btnPad'
+              StyleLookup = 'btnKey'
               TabOrder = 18
               Text = ';'
               TextSettings.Font.Size = 25.000000000000000000
@@ -909,7 +909,7 @@ object FrameKeyboard: TFrameKeyboard
             Size.Width = 40.000000000000000000
             Size.Height = 85.000000000000000000
             Size.PlatformDefault = False
-            StyleLookup = 'btnPad'
+            StyleLookup = 'btnKey'
             TabOrder = 0
             Text = 'Enter'
             TextSettings.Font.Family = 'Nexa Light'
@@ -939,7 +939,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 16
         Text = 'Shift'
         TextSettings.Font.Size = 10.000000000000000000
@@ -957,7 +957,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 15
         Text = '\'
         TextSettings.Font.Size = 25.000000000000000000
@@ -976,7 +976,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 14
         Text = 'z'
         TextSettings.Font.Size = 20.000000000000000000
@@ -995,7 +995,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 13
         Text = 'x'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1014,7 +1014,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 12
         Text = 'c'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1033,7 +1033,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 11
         Text = 'v'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1052,7 +1052,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 10
         Text = 'b'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1070,7 +1070,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 9
         Text = #8593
         TextSettings.Font.Size = 25.000000000000000000
@@ -1088,7 +1088,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 8
         Text = '.'
         TextSettings.Font.Size = 25.000000000000000000
@@ -1106,7 +1106,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 7
         Text = ','
         TextSettings.Font.Size = 25.000000000000000000
@@ -1125,7 +1125,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 6
         Text = 'n'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1144,7 +1144,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 5
         Text = 'm'
         TextSettings.Font.Size = 20.000000000000000000
@@ -1161,7 +1161,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 17
         Text = 'Del'
         TextSettings.Font.Size = 10.000000000000000000
@@ -1179,7 +1179,7 @@ object FrameKeyboard: TFrameKeyboard
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
         Size.PlatformDefault = False
-        StyleLookup = 'btnPad'
+        StyleLookup = 'btnKey'
         TabOrder = 18
         Text = '/'
         TextSettings.Font.Size = 25.000000000000000000

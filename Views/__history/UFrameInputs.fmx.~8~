@@ -1,0 +1,67 @@
+object FrameInputs: TFrameInputs
+  Align = MostTop
+  Size.Width = 670.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 670.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Left
+      Margins.Right = 15.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Top
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        Text = 'Nome:'
+        TabOrder = 0
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 1
+        Text = 'David Christian Dias Ordone'
+        Size.Width = 300.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Layout3: TLayout
+      Align = Left
+      Position.X = 315.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label2: TLabel
+        Align = Top
+        Size.Width = 180.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        Text = 'Telefone:'
+        TabOrder = 0
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 1
+        Text = '(12)9 9704-0012'
+        Size.Width = 180.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+end

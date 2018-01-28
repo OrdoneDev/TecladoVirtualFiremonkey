@@ -1,0 +1,77 @@
+unit UFrameInputs;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Layouts, FMX.Edit, FMX.Controls.Presentation;
+
+type
+  TFrameInputs = class(TFrame)
+    Layout1: TLayout;
+    Layout2: TLayout;
+    Layout3: TLayout;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Layout4: TLayout;
+    Label3: TLabel;
+    Edit3: TEdit;
+    procedure Edit1Click(Sender: TObject);
+    procedure Edit1Exit(Sender: TObject);
+    procedure Edit3Click(Sender: TObject);
+    procedure Edit3Exit(Sender: TObject);
+    procedure Edit2Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    constructor Create(_AOwner: TComponent); override;
+  end;
+
+var
+  FrameInputs: TFrameInputs;
+
+implementation
+
+uses
+  ULibrary;
+
+{$R *.fmx}
+
+{ TFrameInputs }
+
+constructor TFrameInputs.Create(_AOwner: TComponent);
+begin
+  inherited;
+  Parent := TFmxObject(_AOwner);
+end;
+
+procedure TFrameInputs.Edit1Click(Sender: TObject);
+begin
+  OnKeyboard(Sender);
+end;
+
+procedure TFrameInputs.Edit1Exit(Sender: TObject);
+begin
+  OffKeyboard;
+end;
+
+procedure TFrameInputs.Edit2Click(Sender: TObject);
+begin
+  OnNumPad(Sender, true);
+end;
+
+procedure TFrameInputs.Edit3Click(Sender: TObject);
+begin
+  OnNumPad(Sender, false);
+end;
+
+procedure TFrameInputs.Edit3Exit(Sender: TObject);
+begin
+  OffNumPad;
+end;
+
+end.

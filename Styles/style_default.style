@@ -1,0 +1,98 @@
+object TStyleContainer
+  object TRectangle
+    StyleName = 'pKeyboard'
+    Align = Center
+    Fill.Color = claWhite
+    HitTest = False
+    Opacity = 0.899999976158142100
+    Size.Width = 120.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    XRadius = 5.000000000000000000
+    YRadius = 5.000000000000000000
+  end
+  object TLayout
+    StyleName = 'btnKey'
+    Align = Center
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object TRectangle
+      StyleName = 'background'
+      Align = Contents
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF26333B
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF3E3E3E
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.543744325637817400
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.456255644559860200
+      Fill.Gradient.StopPosition.Y = -0.000000004018637867
+      Locked = True
+      HitTest = False
+      Size.Width = 80.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object TGlyph
+      StyleName = 'glyphstyle'
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Align = Left
+      Size.Width = 16.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TText
+      StyleName = 'text'
+      Align = Client
+      Locked = True
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Nexa Light'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+    end
+    object TInnerGlowEffect
+      Softness = 0.300000011920929000
+      GlowColor = claWhite
+      Opacity = 0.899999976158142100
+      Trigger = 'IsPressed=true'
+      Enabled = False
+    end
+  end
+  object TRectangle
+    StyleName = 'pBackground'
+    Align = Center
+    Fill.Color = xFF939393
+    HitTest = False
+    Opacity = 0.899999976158142100
+    Size.Width = 120.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    XRadius = 5.000000000000000000
+    YRadius = 5.000000000000000000
+  end
+end

@@ -1,0 +1,102 @@
+object FrameInputs: TFrameInputs
+  Align = MostTop
+  Size.Width = 670.000000000000000000
+  Size.Height = 70.000000000000000000
+  Size.PlatformDefault = False
+  object lytBackground: TLayout
+    Align = Top
+    Size.Width = 670.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lytNomeProduto: TLayout
+      Align = Left
+      Margins.Right = 15.000000000000000000
+      Position.X = 105.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lblNomeProduto: TLabel
+        Align = Top
+        Size.Width = 300.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        Text = 'Nome do produto:'
+        TabOrder = 0
+      end
+      object edtNomeProduto: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 1
+        Text = 'David Christian Dias Ordone'
+        Size.Width = 300.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = edtNomeProdutoClick
+        OnExit = edtNomeProdutoExit
+      end
+    end
+    object lytCodigo: TLayout
+      Align = Left
+      Margins.Right = 15.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object lblCodigo: TLabel
+        Align = Top
+        Size.Width = 90.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        Text = 'C'#243'digo:'
+        TabOrder = 0
+      end
+      object edtCodigo: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 1
+        Text = '1123'
+        Size.Width = 90.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = edtCodigoClick
+        OnExit = edtValorExit
+      end
+    end
+    object lytValor: TLayout
+      Align = Left
+      Margins.Right = 15.000000000000000000
+      Position.X = 420.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 70.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblValor: TLabel
+        Align = Top
+        Size.Width = 110.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'Label1Style1'
+        Text = 'Valor:'
+        TabOrder = 0
+      end
+      object edtValor: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        StyleLookup = 'Edit1Style1'
+        TabOrder = 1
+        Text = '1.000,00'
+        Size.Width = 110.000000000000000000
+        Size.Height = 45.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = edtValorClick
+        OnExit = edtValorExit
+      end
+    end
+  end
+end
