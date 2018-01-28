@@ -51,9 +51,6 @@ begin
   EventOffKeyboard;
   EventOffNumPad;
 
-  if Assigned(FrameInputs) then
-    FrameInputs.Release;
-
   inherited;
 end;
 

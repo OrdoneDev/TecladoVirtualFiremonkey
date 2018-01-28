@@ -26,7 +26,6 @@ type
     procedure CreateFrameInputs;
   public
     { Public declarations }
-    destructor Destroy; override;
   end;
 
 var
@@ -44,17 +43,6 @@ uses
 procedure TFormMain.CreateFrameInputs;
 begin
   FrameInputs := TFrameInputs.Create(pBackground);
-end;
-
-destructor TFormMain.Destroy;
-begin
-  EventOffKeyboard;
-  EventOffNumPad;
-
-  if Assigned(FrameInputs) then
-    FrameInputs.Release;
-
-  inherited;
 end;
 
 procedure TFormMain.EventOffKeyboard;

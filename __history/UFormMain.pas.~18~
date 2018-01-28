@@ -13,15 +13,20 @@ type
     pBackground: TPanel;
     lytBackground: TLayout;
     lytKeyboard: TLayout;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
     procedure EventOnKeyboard(_SenderFocus: TObject);
     procedure EventOffKeyboard;
 
-    procedure EventOnNumPad(_SenderFocus: TObject; _PadInteger: boolean);
+    procedure EventOnNumPad(_SenderFocus: TObject; _Integer: boolean);
     procedure EventOffNumPad;
+
+    procedure EventsLink;
+    procedure CreateFrameInputs;
   public
     { Public declarations }
+    destructor Destroy; override;
   end;
 
 var
@@ -30,11 +35,26 @@ var
 implementation
 
 uses
-  UFrameKeyboard, UFrameNumpad;
+  UFrameKeyboard, UFrameNumpad, ULibrary, UFrameInputs;
 
 {$R *.fmx}
 
 { TFormMain }
+
+procedure TFormMain.CreateFrameInputs;
+begin
+  FrameInputs := TFrameInputs.Create(pBackground);
+end;
+
+destructor TFormMain.Destroy;
+begin
+  EventOffKeyboard;
+  EventOffNumPad;
+
+  if Assigned(FrameInputs) then
+    FrameInputs.Release;
+  inherited;
+end;
 
 procedure TFormMain.EventOffKeyboard;
 begin
@@ -57,9 +77,27 @@ begin
   end;
 end;
 
-procedure TFormMain.EventOnNumPad(_SenderFocus: TObject; _PadInteger: boolean);
+procedure TFormMain.EventOnNumPad(_SenderFocus: TObject; _Integer: boolean);
 begin
+  if not Assigned(FrameNumpad) then
+  begin
+    FrameNumpad := TFrameNumpad.Create(lytKeyboard, _SenderFocus, _Integer);
+    lytBackground.BringToFront;
+  end;
+end;
 
+procedure TFormMain.EventsLink;
+begin
+  OnKeyboard  := EventOnKeyboard;
+  OffKeyboard := EventOffKeyboard;
+  OnNumpad    := EventOnNumpad;
+  OffNumpad   := EventOffNumpad;
+end;
+
+procedure TFormMain.FormCreate(Sender: TObject);
+begin
+  EventsLink;
+  CreateFrameInputs;
 end;
 
 end.

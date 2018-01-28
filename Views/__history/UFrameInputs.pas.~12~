@@ -29,7 +29,6 @@ type
   public
     { Public declarations }
     constructor Create(_AOwner: TComponent); override;
-    procedure Release; override;
   end;
 
 var
@@ -70,13 +69,6 @@ procedure TFrameInputs.edtValorClick(Sender: TObject);
 begin
   //Teclado numpad float
   OnNumPad(Sender, false);
-end;
-
-procedure TFrameInputs.Release;
-begin
-  Name := '';
-  inherited;
-  FrameInputs := nil;
 end;
 
 procedure TFrameInputs.edtNumpadExit(Sender: TObject);
