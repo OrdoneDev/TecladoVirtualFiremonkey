@@ -46,6 +46,7 @@ object FrameKeyboard: TFrameKeyboard
         StyledSettings = [Family, Style, FontColor]
         Margins.Right = 5.000000000000000000
         Position.X = 585.000000000000000000
+        RepeatClick = True
         Sides = [Top, Left, Bottom, Right]
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
@@ -1157,6 +1158,7 @@ object FrameKeyboard: TFrameKeyboard
         CanFocus = False
         StyledSettings = [Family, Style, FontColor]
         Position.X = 585.000000000000000000
+        RepeatClick = True
         Sides = [Top, Left, Bottom, Right]
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000

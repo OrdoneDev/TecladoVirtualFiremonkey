@@ -400,6 +400,7 @@ object FrameNumpad: TFrameNumpad
         CanFocus = False
         StyledSettings = [Family, Style, FontColor]
         Position.X = 135.000000000000000000
+        RepeatClick = True
         Sides = [Top, Left, Bottom, Right]
         Size.Width = 40.000000000000000000
         Size.Height = 40.000000000000000000
