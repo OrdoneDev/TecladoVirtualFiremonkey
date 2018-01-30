@@ -1,7 +1,7 @@
 object FrameInputs: TFrameInputs
   Align = MostTop
   Size.Width = 670.000000000000000000
-  Size.Height = 70.000000000000000000
+  Size.Height = 128.000000000000000000
   Size.PlatformDefault = False
   object lytBackground: TLayout
     Align = Top
@@ -95,5 +95,17 @@ object FrameInputs: TFrameInputs
         OnExit = edtNumpadExit
       end
     end
+  end
+  object Label1: TLabel
+    Align = Client
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 670.000000000000000000
+    Size.Height = 58.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'Label1Style1'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Clique dentro de algum input'
+    TabOrder = 1
   end
 end

@@ -129,7 +129,10 @@ begin
   Key     := vkReturn;
   KeyChar := ' ';
 
-  TEdit(_SenderFocus).OnKeyDown(_SenderFocus, Key, KeyChar, []);
+  try
+    TEdit(_SenderFocus).OnKeyDown(_SenderFocus, Key, KeyChar, []);
+  except on E: Exception do
+  end;
 end;
 
 procedure InputKeyLeft(_SenderFocus: TObject);

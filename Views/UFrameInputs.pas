@@ -19,6 +19,7 @@ type
     lytValor: TLayout;
     lblValor: TLabel;
     edtValor: TEdit;
+    Label1: TLabel;
     procedure edtNomeProdutoClick(Sender: TObject);
     procedure edtNomeProdutoExit(Sender: TObject);
     procedure edtValorClick(Sender: TObject);
